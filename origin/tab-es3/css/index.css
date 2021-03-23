@@ -1,0 +1,34 @@
+.tabs{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #aaaaaa;
+}
+.tab{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #aaaaaa;
+    cursor: pointer;
+}
+.tab-item{
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 33.3%;
+}
+
+.tab-item.current{
+   background: rebeccapurple;
+    color: #fff;
+}
+.page-item{
+    display: none;
+    height: 500px;
+}
+.page-item.current{
+    display: block;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
