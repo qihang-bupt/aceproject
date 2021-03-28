@@ -1,0 +1,16 @@
+.tab{
+  overflow: hidden;
+  border-bottom: 1px solid #aaaaaa;
+  .tab-item{
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 33.3%;
+    &.current{
+      background: rebeccapurple;
+      color: #fff;
+    }
+  }
+}
+

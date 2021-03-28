@@ -1,0 +1,7 @@
+.page-item{
+  display: none;
+  height: 500px;
+}
+.page-item.current{
+  display: block;
+}
