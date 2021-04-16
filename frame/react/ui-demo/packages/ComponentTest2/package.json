@@ -1,0 +1,25 @@
+{
+  "name": "componenttest2",
+  "version": "1.0.0",
+  "description": "这是测试组件2。",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c ../../rollup.config.js"
+  },
+  "dependencies": {
+    "js-base64": "^3.5.2"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "ui",
+    "test2",
+    "ares"
+  ],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
