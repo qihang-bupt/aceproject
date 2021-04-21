@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import { appContext } from './index'
+import { appContext } from './AppStatus'
 import './App.css';
 
 const App:React.FC = (props) => {
