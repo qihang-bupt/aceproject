@@ -1,10 +1,10 @@
 import React from 'react';
-
+import View from './components/view'
 function App() {
   return (
-    <div className="App">
-      快快快
-    </div>
+    <>
+        <View/>
+    </>
   );
 }
 
