@@ -4,8 +4,7 @@ import Page404 from '../pages/page404';
 const Login = lazy(() => import('../pages/Login'))
 const AdminList = lazy(() => import('../pages/admin/AdminList'))
 const RoleList = lazy(() => import('../pages/role/RoleList'))
-const FirstIndex = lazy(() => import('../pages/FirstIndex'))
-
+const UserList = lazy(() => import('../pages/user/UserList'))
 
 export interface Iroute {
     title: string,
@@ -17,13 +16,13 @@ export interface Iroute {
 export const router: Iroute[] = [
     {
         title:'首页管理',
-        path: '/dashboard',
+        path: '/user',
         // exact:true,
         children: [
             {
-                title:'仪表管理',
-                path: '/indexManage',
-                component: <FirstIndex/>,
+                title:'用户管理',
+                path: '/userManage',
+                component: <UserList/>,
                 exact:true,
             }
         ]
