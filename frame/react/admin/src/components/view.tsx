@@ -36,7 +36,7 @@ class View extends Component {
                     <Router>
                         <Switch>
                             <Route path={'/'} exact>
-                                <Redirect to={'/indexManage'}></Redirect>
+                                <Redirect to={'/userManage'}></Redirect>
                             </Route>
 
                             {

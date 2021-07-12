@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
-// import Auth from "../../../../react-antd-admin-ts/src/componments/Auth";
+
 import {Button, Space, Table } from 'antd';
 import {getRoleList} from '../../api/api'
 import EditRole from './EditRole';
 import AddRole from './AddRole';
+import Auth from '../../components/Auth';
+import DeleteRole from './DeleteRole';
 export interface IRole {
     id: number
     roleName: string
@@ -126,9 +128,9 @@ class RoleList extends Component<any, IState> {
                                 <Button type='primary' onClick={() => {
                                     this.showEditRoleModal(role)
                                 }}>编辑</Button>
-                                {/*<Auth path='deleteRole'>*/}
-                                {/*    <DeleteRole id={role.id} callback={this.deleteRole}/>*/}
-                                {/*</Auth>*/}
+                                <Auth path='deleteRole'>
+                                    <DeleteRole id={role.id} callback={this.deleteRole}/>
+                                </Auth>
                             </Space>
                         )}
                     />

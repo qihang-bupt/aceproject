@@ -1,9 +1,10 @@
-// import {IRouter} from "../router";
+import {Iroute} from "../route/index";
 import {action, makeAutoObservable, runInAction} from "mobx";
 // import {getAdminPermissionList} from "../api/permission";
 
 export default class PermissionStore {
     // permissionList: IRouter[] = []
+    permissionList: Iroute[] = []
     state: string = 'loading'
 
     constructor() {
@@ -17,6 +18,12 @@ export default class PermissionStore {
         // })
         runInAction(() => {
             // this.permissionList = permissionList
+            this.permissionList = [
+                {
+                    title:'test',
+                    path: 'deleteRole'
+                }
+            ]
             this.state = 'success'
         })
     }
